@@ -2,7 +2,32 @@
 <html>
 <head>
     <meta charset='utf-8'>
+    <style>
+        body {
+            background-image: url("IMGs/BG.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+<script>
+    let num = 1;
+
+    function anterior() {
+        num = (num - 1) < 1 ? 5 : (num - 1);
+        document.getElementById("img_P").src = "IMGs/" + num + ".jpg";
+    }
+
+    function siguiente() {
+        num = (num + 1) > 5 ? 1 : (num + 1);
+        document.getElementById("img_P").src = "IMGs/" + num + ".jpg";
+    }
+</script>
+
+
 </head>
+
+
 <body style="background-color:#1d2020;">
     
    <center> <h1 style="color: aliceblue;"> Honkai: Star Rail </h1> </center>
@@ -16,7 +41,22 @@
     HoYoverse es sinónimo de calidad técnica y jugabilidad espectacular. Una compañía con sus luces y sus sombras que, vaya por delante, acaba de estrenar el mejor videojuego de toda su trayectoria.</d>
        <br>
        <br>
-       <center><b style="color: aliceblue;">CALIFICACION 9.7/10 </b></center>
+       <br>
+       <br>
+
+
+
+
+    <img id="img_P" src="IMGs/1.jpg" alt="Imagen carteles" width="1280">
+    <br>
+    <br>
+    <button id="btn_ant" type="button" onclick="anterior()">Anterior</button>
+    <button id="btn_sig" type="button" onclick="siguiente()">Siguiente</button>
+
+
+
+
+
 
 
    <table cellspacing="10" cellpadding="10" border="3" style="background-color:#c4d4e9;margin-top:20px;"> 
@@ -34,9 +74,18 @@
     </tr>
 
     </table>
+    <br>
+    <br>
 
+<<<<<<< HEAD
     <div style="position: absolute; bottom: 10%; left: 50%; transform: translate(-50%, 0);">
         <img src="IMGs/P1.jpeg" alt="Imagen Logo" width="480" height="320"/>
     </div>
+=======
+
+    <img src="IMGs/seele.webp" alt="Seele_Promo" > <img src="IMGs/JingYuan.webp" alt="JingYuan_Promo">
+
+    
+>>>>>>> 3edba76e74aacfff56a04ce8c92ffe2d6b2339bb
 </body>    
 </html>
