@@ -27,14 +27,19 @@
         var Nombre = getParameter("Nombre");
         var Apellidos = getParameter("Apellidos");
         var Correo = getParameter("Correo");
-
+        var Nacimiento = getParameter("Nacimiento");
         var Telefono = getParameter("Telefono");
+
+        console.log(Nacimiento);
+        var arreglo Nacimiento.split("-");
+        
 
         if(Nombre != null){
             document.getElementById("Nombr").innerHTML = Nombre;
             document.getElementById("Ape").innerHTML = Apellidos;
             document.getElementById("correo").innerHTML = Correo;
             document.getElementById("telef").innerHTML = Telefono;
+            document.getElementById("Eda").innerHTML = Fecha;
 
 
         };
