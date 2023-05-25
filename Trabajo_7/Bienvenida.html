@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,17 +9,22 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
-<body>
-    
-    
-    <h1 id="Nombr"></h1>
-    <h2 id="Ape"></h2>
-    <a id= "correo" href="mailto:correo"></a>
 
-    <a id="telef" href="tel:Telefono"></a>
+<body>
+
+
+    <h1 id="Nombr"></h1>
+    <br>
+    <h2 id="Ape"></h2>
+    <br>
+    <a id="correo" href="mailto:correo"></a> <br>
+
+    <a id="telef" href="tel:Telefono"></a><br>
+
+    <a id="Eda"></a>
 
     <script>
-        getParameter = (key)=>{
+        getParameter = (key) => {
             address = window.location.search;
             parameterList = new URLSearchParams(address);
             return parameterList.get(key);
@@ -27,25 +33,25 @@
         var Nombre = getParameter("Nombre");
         var Apellidos = getParameter("Apellidos");
         var Correo = getParameter("Correo");
-        var Nacimiento = getParameter("Nacimiento");
+        var Fecha = getParameter("Nacimiento");
         var Telefono = getParameter("Telefono");
 
-        console.log(Nacimiento);
-        var arreglo Nacimiento.split("-");
-        
+        var edad = 0;
+        var ann = Fecha.substring(0, 4);
+        Fecha = parseInt(Fecha, 10);
 
-        if(Nombre != null){
-            document.getElementById("Nombr").innerHTML = Nombre;
-            document.getElementById("Ape").innerHTML = Apellidos;
-            document.getElementById("correo").innerHTML = Correo;
-            document.getElementById("telef").innerHTML = Telefono;
-            document.getElementById("Eda").innerHTML = Fecha;
+        edad = 2023 - Fecha;
 
+        document.getElementById("Nombr").innerHTML = Nombre;
+        document.getElementById("Ape").innerHTML = Apellidos;
+        document.getElementById("correo").innerHTML = Correo;
+        document.getElementById("telef").innerHTML = Telefono;
+        document.getElementById("Eda").innerHTML = edad + " Años";
 
-        };
 
 
     </script>
 
 </body>
+
 </html>
