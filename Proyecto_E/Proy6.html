@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Producto:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            Ingrese aqui el nombre de su producto.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Cantidad:</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="Cantidad"
+            name="Cantidad"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="Importado"
+            name="Importado"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Es importado?</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </form>
+
+      <table class="table table-hover">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Cantidad</th>
+          <th>Es Importado</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Tenis Nike</td>
+          <td>5</td>
+          <td>si</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Tenis Puma</td>
+          <td>7</td>
+          <td>no</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Tenis Adidas</td>
+          <td>2</td>
+          <td>si</td>
+        </tr>
+      </table>
+
+      <footer class="container">
+        <p class="float-end">
+          <a href="#"> Back to top</a>
+        </p>
+        <p>
+          &copy; 2023 Aplicaciones Web &middot;
+          <a href="https://utez.edu.mx"> UTEZ</a>
+          &middot;
+          <a href="#"> Moises G</a>
+        </p>
+      </footer>
+    </main>
+
+    <script type="script" src="js/bootstrap.js"></script>
+  </body>
+</html>
